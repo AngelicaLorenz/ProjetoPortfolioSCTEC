@@ -53,7 +53,7 @@
  }
 
  .hero-container{ 
-    height: 50vh;  
+    min-height: 50vh;  
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,8 @@
 
  .intro{
     color: #34b399;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 1.5em;
  }
 
@@ -73,42 +74,46 @@
 
  .descricao{
     color: #34b399;  
-    font-size: 1.5em;     
+    font-size: 1.5em;  
+    margin-top: 20px;   
  }
 
  /*SOBRE*/
 
 #sobre{
-    min-height: 50vh;
-    padding: 1em;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-color: #e5e7eb;
 } 
 
 #sobre h2{
     color: #34b399;
     text-align: center;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
 .sobre-conteudo{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
 .sobre-conteudo .sobre-texto{
+    display: flex;
+    width: 80vw;
     flex: 1;
-}
-
-.sobre-conteudo .sobre-formacao{
-    flex: 1;
+     gap: 60px;
 }
 
 .sobre-texto p{
     color: #9ca3af; 
     margin-bottom: 20px;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
+   
 }
 
 .sobre-dados{
@@ -335,5 +340,13 @@
     #menu.ativa{
         display: flex;
     }
+
+    .sobre-conteudo .sobre-texto{
+        width: 80vw;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
 }
 
