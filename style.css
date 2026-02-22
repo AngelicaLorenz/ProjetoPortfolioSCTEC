@@ -22,15 +22,24 @@
 
  .logo{
     color: #34b399;
-    font-size: 1.5em;    
+    font-size: 1.3em;    
  }
 
  .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 40px;
     position: relative;   
+    background: #020617;
+
+    /* REGRAS PARA FIXAR NO TOPO */
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
  }
 
  
@@ -48,12 +57,12 @@
  .hero{
     min-height: 50vh; 
     background: radial-gradient(circle at top, #121b31, #020617); 
-   padding: 30px;
+    
       
  }
 
  .hero-container{ 
-    min-height: 50vh;  
+    min-height: 100vh;  
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -62,8 +71,7 @@
 
  .intro{
     color: #34b399;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;    
     font-size: 1.5em;
  }
 
@@ -81,7 +89,7 @@
  /*SOBRE*/
 
 #sobre{
-    min-height: 30vh;   
+    min-height: 40vh;   
     display: flex;
     flex-direction: column;    
     padding: 2em;
