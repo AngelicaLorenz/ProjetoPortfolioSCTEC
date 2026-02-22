@@ -217,8 +217,16 @@
 /*HABILIDADES*/
 
 #habilidades{
-    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
+  
+    padding: 30px;
 }
 
 #habilidades p{
@@ -257,7 +265,7 @@
     margin-bottom: 10px;    
 }
 
-
+/*CONTATO*/
 
 #contato{
     min-height: 50vh;
