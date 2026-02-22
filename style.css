@@ -31,7 +31,7 @@
     align-items: center;
     padding: 20px 40px;
     position: relative;   
-    background: #020617;
+    background: #020617;       
 
     /* REGRAS PARA FIXAR NO TOPO */
     position: fixed;
@@ -56,8 +56,7 @@
 
  .hero{
     min-height: 50vh; 
-    background: radial-gradient(circle at top, #121b31, #020617); 
-    
+    background: radial-gradient(circle at top, #020617, #031927);     
       
  }
 
@@ -153,21 +152,31 @@
 /*PROJETOS*/
 
 #projetos{
-    min-height: 100vh; 
-    text-align: center;
-    margin: 20px;   
+    padding-top: 40px;
+    padding-bottom: 60px;
+    min-height: auto; 
+    text-align: center;    
+    background: radial-gradient(circle at top, #020617, #031927);  
 }
 
 .projetos-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px;  
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;    
 }
 
 .projetos-container > * {
-    flex: 1 1 250px;    
+    flex: 0 1 250px;    
 }
 
+.projetos-container a {
+    display: inline-block; /* Permite que margens e paddings funcionem melhor em links */
+    margin-top: auto;      /* Truque: empurra o link sempre para o final do card */
+    padding-top: 10px;     /* Espaço extra acima do link */
+}
 .projeto-card{
     background: #020617;
     padding: 20px;
@@ -177,12 +186,19 @@
 .projeto-card img{
     width: 100%;
     object-fit: contain;
+    border-radius: 5px;
+}
+
+.projeto-card h2{
+    font-size: 1.1em;
 }
 
 #projetos h2{
     color: #34b399;
     margin-bottom: 1em;
+    margin-top: 1em;  
 }
+
 
 .projeto-card p{
     color: #9ca3af;
@@ -192,10 +208,10 @@
 .projeto-card a{
     color: #34b399;
     font-weight: bold;
-    border: 2px solid #34b399;
+    border: 1px solid #34b399;
     padding: 10px;
-    border-radius: 10px;  
-  
+    border-radius: 10px;   
+    
 }
 
 /*HABILIDADES*/
