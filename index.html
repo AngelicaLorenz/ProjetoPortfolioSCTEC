@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angélica Lorenz - Portfólio Dev</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <h3 class="logo">Angélica Lorenz</h3>
+            <button id="hamburger"> &#9776</button>
+            <ul id="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero-container">
+            <p class="intro">Olá, eu sou</p>
+            <h2>Desenvolvedora FrontEnd</h2>
+            <p class="descricao">Criando experiências digitais com código!</p>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-conteudo">
+            <div class="sobre-texto">
+                <p> Sou uma entusiasta da tecnologia em constante evolução, apaixonada pela intersecção entre design e
+                    funcionalidade. Dedico meus dias a transformar conceitos criativos em interfaces reais, utilizando
+                    HTML, CSS e JavaScript. Acredito que um bom código deve ser tão limpo quanto a experiência que ele
+                    proporciona ao usuário, por isso, busco sempre aplicar as melhores práticas em cada projeto que
+                    desenvolvo. </p>
+                <p> Meu objetivo atual é conquistar minha primeira oportunidade no mercado tech, onde eu possa
+                    contribuir com soluções visuais modernas e eficientes, enquanto absorvo conhecimento de
+                    desenvolvedores mais experientes. Estou focada em me tornar uma especialista em Front-End,
+                    aprimorando minhas habilidades em frameworks modernos e arquitetura de sistemas. </p>
+            </div>
+
+            <div class="sobre-dados">
+                <div>
+                    <strong>5+</strong>
+                    <span>Projetos Concluíos</span>
+                </div>
+                <div>
+                    <strong>1+</strong>
+                    <span>Ano(s) de Experiência</span>
+                </div>
+                <div>
+                    <strong>4+</strong>
+                    <span>Tecnologias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">
+                <img src="assets/projeto-exemplo.png" alt="Imagem do projeto">
+                <h2>E-commerce</h2>
+                <p>Plataforma simples com html, CSS e JavaScript.</p>
+                <a href="#">Ver projeto</a>
+            </div>    
+            
+            <div class="projeto-card">
+                <img src="assets/projeto-exemplo.png" alt="Imagem do projeto">
+                <h2>Gerenciador de Tarefas</h2>
+                <p>Aplicação para gerenciamento de tarefas.</p>
+                <a href="#">Ver projeto</a>
+            </div> 
+
+            <div class="projeto-card">
+                <img src="assets/projeto-exemplo.png" alt="Imagem do projeto">
+                <h2>App de Finanças</h2>
+                <p>Aplicação para gerenciamento de finanças pessoais.</p>
+                <a href="#">Ver projeto</a>
+            </div> 
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <p>Tecnologias e habilidades que utilizo para desenvolver soluções completas.</p>
+        <div class="habilidades-lista">
+            <div class="habilidades-card">
+                <h3>HTML</h3>
+                <span>Básico</span>
+            </div>
+            <div class="habilidades-card">
+                <h3>CSS</h3>
+                <span>Básico</span>
+            </div>
+            <div class="habilidades-card">
+                <h3>JavaScript</h3>
+                <span>Básico</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" >
+        <h2>Entre em contato</h2>
+        <p>Tem algum projeto em mente ou quer trocar uma ideia? Estou sempre aberta a novas oportunidades.</p>
+        <div class="contatos-lista">
+            <div class="contato-item">
+                <strong>Email</strong>
+                <span>angelicadlorenz@gmail.com</span>
+            </div>
+            <div class="contato-item">
+                <strong>Whatsapp</strong>
+                <span>(47) 99276-0502</span>
+            </div>
+            <div class="contato-item">
+                <strong>Localização</strong>
+                <span>Rio dos Cedros / SC</span>
+            </div>
+        </div>
+
+        <div class="redes-sociais">
+            <a href="#">Github</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 DevPortfólio</p>
+    </footer>
+
+    <script>
+        let button = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        button.addEventListener("click", function(){
+            menu.classList.toggle("ativa");
+        });
+    </script>
+
+</body>
+
+</html>
