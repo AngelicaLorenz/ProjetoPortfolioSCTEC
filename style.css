@@ -81,11 +81,12 @@
  /*SOBRE*/
 
 #sobre{
-    min-height: 30vh;
+    min-height: 30vh;   
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     padding: 2em;
-    background-color: #e5e7eb;
+    background: #031927;
+    
 } 
 
 #sobre h2{
@@ -99,13 +100,16 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    padding: 20px;
 }
 
 .sobre-conteudo .sobre-texto{
     display: flex;
-    width: 80vw;
+    width: 90%;
+    max-width: 1000px;
     flex: 1;
-     gap: 60px;
+    gap: 40px;
+    margin: 0 auto;
 }
 
 .sobre-texto p{
@@ -119,7 +123,8 @@
 .sobre-dados{
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    margin-top: 10px;    
 }
 
 .sobre-dados div{     
