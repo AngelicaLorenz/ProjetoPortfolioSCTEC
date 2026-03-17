@@ -14,6 +14,7 @@ Acesse o projeto publicado:
 
 - HTML5
 - CSS3
+- JavaScript 
 
 ## 📚 Objetivo do projeto
 
