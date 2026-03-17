@@ -12,10 +12,12 @@
  a{
     text-decoration: none;
     color: inherit;
+    font-weight: bold;
  }
 
  li{
     list-style: none;
+    margin: 0 25px;
  }
 
  /*HEADER*/
@@ -69,7 +71,14 @@
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    text-align: center;    
+    text-align: center;  
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(assets/background.jpg);  
+    background-size: cover;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  }
 
  .intro{
@@ -395,21 +404,46 @@
         position: absolute;
         top: 70px;
         right: 40px;
-        gap: 15px;
-        background: #111;
         flex-direction: column;
+        background: #020617;
+        padding: 40px;        
+        border-radius: 10px;
+        width: 100vw; 
+        height: auto;    
+        text-align: right;   
         display: none;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    #menu li{
+        padding: 20px 0;
+    }
+
+    #menu li a{
+        display: block;
     }
 
     #menu.ativa{
         display: flex;
     }
 
+    .hero-container .intro{
+        font-size: 1.2rem;
+    }
+
+    .hero-container .descricao{
+        font-size: 1.3rem;
+    }
+
     .sobre-conteudo .sobre-texto{
-        width: 80vw;
+        width: 70vw;
         flex-direction: column;
         gap: 20px;
     } 
+
+    .sobre-dados{
+        justify-content: center;
+    }
     
 }
 
